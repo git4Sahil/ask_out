@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div>
+                <h1 class="header_text" style="color: rgb(97, 233, 79); background-color: rgb(42, 42, 102);">
+                Bebo ji, Are you free for the next, 100-150 saal?   </h1>
+                <p class="header_text" style="color: rgb(250, 250, 250); background-color: rgb(42, 42, 102); font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">woh kya haina ji,<br> Meri har khushi ka hissa ,gam mein sahara dogi....?<br>mere sahi me shabashi,galat me daath dogi....?<br> Ladai bhi mujhse,utna hi pyar bhi mujhe dogi....?<br>Bebo ji,toh kya aap meri maa ki bahu banogi???</p>
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+                    alt="Cute animated illustration">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()" style="background-color:rgb(85, 240, 24) ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Hanji</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()" style="background-color: rgb(245, 87, 87);">Na ji na</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
